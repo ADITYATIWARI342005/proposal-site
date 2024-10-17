@@ -16,8 +16,12 @@ function nextQuestion() {
   else if (currentQuestion === 2) {
         document.getElementById("question").innerHTML = "Would you like to be my girlfriend?";
       document.getElementsByClassName("yes")[0].setAttribute("onclick", "showGifAndNext(2, true)");
+      const yesButton = document.getElementsByClassName("yes")[0];
        const noButton = document.getElementsByClassName("no")[0];
+       yesButton.style.position = 'absolute';
+       yesButton.style.left = `${((window.innerWidth - yesButton.offsetWidth) / 2) - 50}px`;
         noButton.style.position = 'absolute';
+        noButton.style.left = `${((window.innerWidth - noButton.offsetWidth) / 2 )+50}px`;
         noButton.onmouseover = moveButton;
       noButton.touchstart = moveButton;
         noButton.onclick = function() { showGifAndNext(2, false, 'Bro but I don\'t roll like that'); }; 

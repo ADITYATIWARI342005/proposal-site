@@ -18,10 +18,12 @@ function nextQuestion() {
       document.getElementsByClassName("yes")[0].setAttribute("onclick", "showGifAndNext(2, true)");
        const noButton = document.getElementsByClassName("no")[0];
         noButton.style.position = 'absolute';
-        noButton.onmouseover = moveButton;
-      noButton.touchstart = moveButton;
-      noButton.onclick = moveButton;
-      noButton.ontouchstart = moveButton;
+      noButton.addEventListener("touchstart", handleMove);
+    noButton.addEventListener("mouseover", handleMove);
+      noButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        showGifAndNext(2, false);
+    });
         document.getElementById("gif2").style.display = 'block';
     }
   else if (currentQuestion === 3) {
@@ -52,6 +54,10 @@ function showGifAndNext(questionNum, isYes, endMessage = '') {
             }
         }
     }
+}
+function handleMove(event) {
+    event.preventDefault();
+    moveButton();
 }
 function moveButton() {
     const button = document.getElementsByClassName("no")[0];

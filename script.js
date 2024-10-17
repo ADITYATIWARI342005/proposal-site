@@ -20,6 +20,8 @@ function nextQuestion() {
         noButton.style.position = 'absolute';
         noButton.onmouseover = moveButton;
       noButton.touchstart = moveButton;
+      noButton.onclick = moveButton;
+      noButton.ontouchstart = moveButton;
         document.getElementById("gif2").style.display = 'block';
     }
   else if (currentQuestion === 3) {

@@ -18,7 +18,8 @@ function nextQuestion() {
       document.getElementsByClassName("yes")[0].setAttribute("onclick", "showGifAndNext(2, true)");
        const noButton = document.getElementsByClassName("no")[0];
         noButton.style.position = 'absolute';
-        noButton.onmouseover = moveButton; 
+        noButton.onmouseover = moveButton;
+      noButton.touchstart = moveButton;
         noButton.onclick = function() { showGifAndNext(2, false, 'Bro but I don\'t roll like that'); }; 
         document.getElementById("gif2").style.display = 'block';
     }

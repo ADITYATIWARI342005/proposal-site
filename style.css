@@ -1,0 +1,47 @@
+body {
+    position: relative;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin-top: 0px;
+    background-color: #fddbb0;
+    color: white;
+  }
+  
+  h1 {
+      color: #ff1493;
+  }
+  
+  button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ff1493;
+      color: white;
+      border: none;
+      border-radius: 5px;
+  }
+  button:hover {
+      background-color: #ff69b4;
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+  }
+  
+  #buttons {
+      position: relative;
+  }
+  
+  .no {
+      transition: 0.3s all ease;
+  }
+  @media (max-width: 600px) {
+      h1 {
+          font-size: 24px;
+      }
+      button {
+          width: 100%;
+      }
+  }
+  

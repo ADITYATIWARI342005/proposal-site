@@ -20,7 +20,7 @@ function nextQuestion() {
         noButton.style.position = 'absolute';
         noButton.onmouseover = moveButton;
       noButton.touchstart = moveButton;
-        noButton.onclick = function() { showGifAndNext(2, false, 'Bro but I don\'t roll like that'); }; 
+        noButton.onclick = function() {moveButton; }; 
         document.getElementById("gif2").style.display = 'block';
     }
   else if (currentQuestion === 3) {

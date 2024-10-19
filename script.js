@@ -45,7 +45,7 @@ function showGifAndNext(questionNum, isYes, endMessage = '') {
         if (questionNum === 1) {
            document.getElementById("question").innerHTML = '';
     document.getElementById("buttons").style.display = 'none';
-            redirectTo("https://youtube.com/playlist?list=PLauivoElc3ggagradg8MfOZreCMmXMmJ-&feature=shared");
+            redirectTo("https://youtube.com/shorts/K_nmYlMfpxc?feature=shared");
         } 
     else {
             document.getElementById(`gif${questionNum}`).style.display = 'block';

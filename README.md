@@ -27,9 +27,13 @@ You can check out the live version of this project here:
 
 4. **Final Step:**  
    If the user agrees, a message thanks them for being your girlfriend.
-
+## Running Testst
+https://github.com/user-attachments/assets/797f47a2-e530-4466-b2bf-31197fe0bd22
 ## Technologies Used 🖥️
 - **HTML** – Structure of the webpage  
 - **CSS** – Styling and animations  
 - **JavaScript** – Logic and interactivity  
 - **GIFs** – Fun visuals from external links or local assets
+## Author
+
+- Sufyan Nadeem
